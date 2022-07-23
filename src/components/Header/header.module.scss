@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    height: 40px;
+    background-color: aqua;
+    align-items: center;
+
+}
+
+.link {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    &:hover {
+        color: blue;
+    }
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+.user {
+    margin-right: 10px;
+}
