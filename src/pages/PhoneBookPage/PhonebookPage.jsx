@@ -22,8 +22,8 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 import ContactList from '../../components/ContactList';
 import Filter from '../../components/Filter';
 
-export const PhonebookPage = () => {
-  
+ const PhonebookPage = () => {
+
   const dispatch = useDispatch();
   const items = useSelector(getContacts, shallowEqual);
   const loading = useSelector(getLoader, shallowEqual);
@@ -72,3 +72,4 @@ export const PhonebookPage = () => {
   );
 };
 
+export default PhonebookPage

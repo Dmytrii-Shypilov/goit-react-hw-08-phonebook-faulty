@@ -4,12 +4,17 @@
   
   .form {
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid #03a1fc;
     border-radius: 5px;
     text-align: center;
   
     margin-right: auto;
     margin-left: auto;
+    color: blue;
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
   .label {
@@ -20,6 +25,7 @@
   .input {
     display: block;
     width: 180px;
+    border-color: #03a1fc;
   
     margin-left: auto;
     margin-right: auto;
@@ -27,6 +33,19 @@
   }
   
   .btn {
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
     margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: #03a1fc;
+    border: transparent;
+    border-radius: 5px;
+   
+    &:hover {
+      color: blue;
+      
+    }
   }
   

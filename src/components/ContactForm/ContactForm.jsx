@@ -1,4 +1,4 @@
-import style from './contact-form.module.css';
+import style from './contact-form.module.scss';
 
 import { useState } from 'react';
 import PropTypes from 'prop-types';
@@ -8,18 +8,17 @@ const ContactForm = ({ onSubmit }) => {
     name: '',
     number: '',
   });
- 
 
   const onInputChange = ({ target }) => {
     const { name, value } = target;
     setContact(prevState => ({
       ...prevState,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
   const onSubmitHandle = event => {
-    const {name, number} = contact
+    const { name, number } = contact;
     event.preventDefault();
     onSubmit({ name, number });
     event.target.reset();
@@ -51,10 +50,11 @@ const ContactForm = ({ onSubmit }) => {
         required
         placeholder="Number"
       />
-
-      <button className={style.btn} type="submit">
-        Add contact
-      </button>
+      <div className={style.btnContainer}>
+        <button className={style.btn} type="submit">
+          Add contact
+        </button>
+      </div>
     </form>
   );
 };
