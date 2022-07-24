@@ -25,7 +25,7 @@ const LoginPage = () => {
      navigate('/contacts')
     }
    
-  }, [loggedIn]);
+  }, [loggedIn, navigate]);
 
   const onInput = e => {
     setUser(prevState => {

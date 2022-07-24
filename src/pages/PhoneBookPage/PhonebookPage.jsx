@@ -38,7 +38,7 @@ import Filter from '../../components/Filter';
       navigate('/login')
     }
     dispatch(fetchContacts());
-  }, [dispatch, isLoggedIn]);
+  }, [dispatch, isLoggedIn, navigate]);
 
   const putContact = newData => {
    

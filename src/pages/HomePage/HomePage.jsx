@@ -1,5 +1,4 @@
 import s from './home-page.module.scss';
-import { useEffect } from 'react';
 
 const HomePage = () => {
 
