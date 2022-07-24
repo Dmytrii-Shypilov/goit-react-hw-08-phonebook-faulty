@@ -5,12 +5,13 @@ import { useDispatch } from 'react-redux';
 import { currentUser } from 'redux/auth/auth-operations';
 import PrivateRoute from './Routes/PrivateRoute';
 import PublicRoute from './Routes/PublicRoute';
+import PhonebookPage from 'pages/PhonebookPage';
 
 const Header = lazy(()=> import('./Header')); 
 const HomePage = lazy(()=> import('pages/HomePage'));
 const LoginPage = lazy(()=> import('pages/LoginPage'));
 const RegisterPage = lazy(()=> import('pages/RegisterPage'));
-const PhonebookPage = lazy(()=> import('pages/PhonebookPage')) ;
+// const PhonebookPage = lazy(()=> import('pages/PhonebookPage')) ;
 
 
 const App = () => {
