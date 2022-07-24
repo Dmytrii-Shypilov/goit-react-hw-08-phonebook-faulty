@@ -18,7 +18,7 @@ import {
 import { actions } from 'redux/contacts/contacts-slice';
 import { getIsLoggedIn } from 'redux/auth/auth-selectors';
 
-import ContactForm from '../../components/ContactForm/ContactForm';
+import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from '../../components/ContactList';
 import Filter from '../../components/Filter';
 

@@ -1,4 +1,4 @@
-import style from './filter.module.css';
+import style from './filter.module.scss';
 
 import PropTypes from 'prop-types';
 
