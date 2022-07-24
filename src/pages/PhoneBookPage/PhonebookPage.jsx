@@ -18,11 +18,12 @@ import {
 import { actions } from 'redux/contacts/contacts-slice';
 import { getIsLoggedIn } from 'redux/auth/auth-selectors';
 
-import ContactForm from '../../components/PhonebookApp/ContactForm/ContactForm';
-import ContactList from '../../components/PhonebookApp/ContactList';
-import Filter from '../../components/PhonebookApp/Filter';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import ContactList from '../../components/ContactList';
+import Filter from '../../components/Filter';
 
 export const PhonebookPage = () => {
+  
   const dispatch = useDispatch();
   const items = useSelector(getContacts, shallowEqual);
   const loading = useSelector(getLoader, shallowEqual);
